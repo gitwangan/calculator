@@ -28,4 +28,5 @@
   * The calculator is developed under a Spring Boot environment which provides great IoC compatibility. By adding a controller layer, this calculator can be easily shipped to web users.
 * Error Handling
   * Whenever divided by 0 in calculation, an `ArithmeticException` will be thrown with a message.
+  * Whenever calculation overflows, a custom `OperationOverflowException` will be thrown with a message.
   * When unsupported operators are called, a custom `UnsuporttedOperationException` will be thrown with a message.
