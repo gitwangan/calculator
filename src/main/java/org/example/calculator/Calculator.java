@@ -15,7 +15,7 @@ public class Calculator {
         return OperationFactory.getOperationFromSymbol(symbol).apply(num1, num2);
     }
 
-    public Calculator chaining(Operation op, Number val) {
+    public Calculator chaining(Operation  op, Number val) {
         curVal = calculate(op, curVal, val);
         return this;
     }
